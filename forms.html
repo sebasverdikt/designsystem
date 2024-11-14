@@ -1,0 +1,213 @@
+<!-- Breadcrumbs -->
+<section class="row">
+	<nav aria-label="breadcrumb" class="col">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><i class="icon b2b-Config me-1 pe-1"></i><a href="#">Components</a>
+			</li>
+			<li class="breadcrumb-item active" aria-current="page">Forms</li>
+		</ol>
+	</nav>
+</section>
+<!--/breadcrumbs-->
+
+<!-- Title -->
+<section class="row mb-3">
+	<h1 class="h1">Forms</h1>
+    <p class="header-subtitle pt-2 mb-0">Forms are there to get some information from the user with a set of input controls and submit it to the system.</p>
+</section>
+<!--/title-->
+
+<!-- Content -->
+<section id="Inputs" aria-label="Inputs" class="row g-3">
+	<div class="col-6">
+		<div class="card shadow">
+			<div class="card-header d-flex justify-content-between align-items-center">
+				<div class="card-title">
+					<span class="h3">Inputs</span>
+				</div>
+				<div class="card-actions hstack">
+					<button type="button" data-bs-toggle="collapse" data-bs-target=".body-inputs" aria-expanded="true" aria-controls="body-inputs" class="btn btn-icon btn-sa btn-primary">
+						<i class="icon b2b-Chevron-down"></i>
+					</button>
+				</div>
+			</div>
+			<div class="card-body body-inputs collapse show">
+				<div class="row">
+					<div class="col-6">
+                        <p class="lead mb-4">Text</p>
+                        <div class="mb-4">
+                            <label for="Default" class="form-label">Default</label>
+                            <div class="input-group">   
+                                <input type="text" id="Default" class="form-control" placeholder="Placeholder" aria-describedby="DefaultSupporting">
+                                <button type="button" class="btn btn-icon btn-form btn-primary"><i class="icon b2b-Search"></i></button>
+                            </div>
+                            <div id="DefaultSupporting" class="form-text">
+                                Supporting text
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="Readonly" class="form-label" readonly>Readonly</label>
+                            <div class="input-group">   
+                                <input type="text" id="Readonly" class="form-control" value="Inputed text" aria-describedby="ReadonlySupporting" readonly>
+                                <button type="button" class="btn btn-icon btn-form btn-primary" disabled><i class="icon b2b-Search"></i></button>
+                            </div>
+                            <div id="ReadonlySupporting" class="form-text">
+                                Supporting text
+                            </div>
+                        </div>
+                        <div class="">
+                            <label for="Disabled" class="form-label" disabled>Disabled</label>
+                            <div class="input-group">   
+                                <input type="text" id="Disabled" class="form-control" placeholder="Placeholder" aria-describedby="DisabledSupporting" disabled>
+                                <button type="button" class="btn btn-icon btn-form btn-primary" disabled><i class="icon b2b-Search"></i></button>
+                            </div>
+                            <div id="DisabledSupporting" class="form-text">
+                                Supporting text
+                            </div>
+                        </div>
+					</div>
+                    <div class="col-3 d-none">
+                        <p class="lead mb-4">Select</p>
+                        <div class="mb-4">
+                            <label for="Default" class="form-label">Default</label>
+                            <div class="input-group">   
+                                <select class="form-select" aria-label="Default select example" required>
+                                    <option value="" hidden>Select...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div id="DefaultSupporting" class="form-text">
+                                Supporting text
+                            </div>
+                        </div>                        
+                        <div class="mb-4">
+                            <label for="Readonly" class="form-label" readonly>Readonly</label>
+                            <div class="input-group">   
+                                <select class="form-select" aria-label="Default select example" readonly>
+                                    <option selected>Selected item</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div id="ReadonlySupporting" class="form-text">
+                                Supporting text
+                            </div>
+                        </div>
+                        <div class="">
+                            <label for="Disabled" class="form-label" disabled>Disabled</label>
+                            <div class="input-group">   
+                                <select class="form-select" aria-label="Default select example" disabled>
+                                    <option selected>Select...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div id="DisabledSupporting" class="form-text">
+                                Supporting text
+                            </div>
+                        </div>
+					</div>
+                    <div class="col-6">
+                        <p class="lead mb-4 d-inline-block">Select </p><span class="rounded-pill border border-1 border-info-subtle bg-white text-info px-1 ms-1 fs-5">Dropdown method</span>
+                        <div class="mb-4">
+                            <label for="Default" class="form-label">Default</label>
+                            <div class="dropdown input-group">
+                                <button class="btn btn-select dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span>Select...</span>
+                                </button>
+                                <button type="button" class="btn btn-icon btn-form btn-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="icon b2b-Chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-start w-100">
+                                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                  <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                </ul>
+                            </div>
+                            <input type="hidden" id="selVal">
+                            <div id="DefaultSupporting" class="form-text">
+                                Supporting text
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="Default" class="form-label">Readonly</label>
+                            <div class="dropdown input-group">
+                                <button class="btn btn-select dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false" readonly>
+                                  <span>Selected item</span>
+                                </button>
+                                <button type="button" class="btn btn-icon btn-form btn-primary" data-bs-toggle="dropdown" aria-expanded="false" disabled>
+                                    <i class="icon b2b-Chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-start w-100">
+                                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                  <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                </ul>
+                            </div>
+                            <input type="hidden" id="selVal">
+                            <div id="DefaultSupporting" class="form-text">
+                                Supporting text
+                            </div>
+                        </div> 
+                        <div class="mb-4">
+                            <label for="Default" class="form-label">Disabled</label>
+                            <div class="dropdown input-group">
+                                <button class="btn btn-select dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>
+                                  <span>Selected item</span>
+                                </button>
+                                <button type="button" class="btn btn-icon btn-form btn-primary" data-bs-toggle="dropdown" aria-expanded="false" disabled>
+                                    <i class="icon b2b-Chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-start w-100">
+                                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                  <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                </ul>
+                            </div>
+                            <input type="hidden" id="selVal">
+                            <div id="DefaultSupporting" class="form-text">
+                                Supporting text
+                            </div>
+                        </div>                       
+					</div>
+                </div>    
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="row g-3 my-3" id="Resources" aria-label="Resources">
+	<h2>Resources</h2>
+	<div class="col-2">
+        <div class="card shadow hover-card">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" class="w-25 mb-3 mx-auto"><path fill="#ff4785" d="M13.9,0h-.9v2l-.8-.5-.8.5V.2L1.9.9c-.5,0-.9.5-.9,1v12.3c0,.5.4,1,.9,1l12,.9c.6,0,1.1-.4,1.1-1V1C15,.4,14.5,0,13.9,0ZM8.1,13.2c-2,0-3.7-.8-3.5-3.5,0-.3,2.6-.2,2.6,0,0,1.1.2,1.5.9,1.5s.7-.3.7-.7c0-.7-.8-1.1-1.6-1.6-1.2-.6-2.6-1.4-2.6-3.2s1.2-2.9,3.4-2.9,3.4,1.1,3.4,3.3c-.3.2-2.5.4-2.5,0,0-1.2-.5-1.3-.8-1.3s-.8,0-.8.7.7,1,1.6,1.5c1.2.6,2.7,1.4,2.7,3.3s-1.5,2.9-3.4,2.9Z"/></svg>
+            <div class="card-header text-center">
+                <h3>Storybook</h3>
+            </div>
+            <a href="#" class="stretched-link"></a>
+        </div>
+    </div>
+	<div class="col-2">
+        <div class="card shadow hover-card">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" class="w-25 mb-3 mx-auto"><path fill="#24292F" d="M8,0C3.6,0,0,3.7,0,8.2s2.3,6.7,5.5,7.8c.4,0,.5-.2.5-.4s0-.8,0-1.5c-2.2.5-2.7-1-2.7-1-.4-1-.9-1.2-.9-1.2-.7-.5,0-.5,0-.5.8,0,1.2.8,1.2.8.7,1.2,1.9.9,2.3.7,0-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4s.3-1.6.8-2.2c0-.2-.4-1,0-2.2,0,0,.7-.2,2.2.8.7-.2,1.3-.3,2-.3.7,0,1.4,0,2,.3,1.5-1.1,2.2-.8,2.2-.8.4,1.1.2,2,0,2.2.5.6.8,1.3.8,2.2,0,3.2-1.9,3.8-3.7,4,.3.3.5.7.5,1.5,0,1.1,0,2,0,2.3s.1.5.5.4c3.2-1.1,5.5-4.2,5.5-7.8,0-4.5-3.6-8.2-8-8.2Z"/></svg>
+            <div class="card-header text-center">
+                <h3>GitHub</h3>
+            </div>
+            <a href="#" class="stretched-link"></a>
+        </div>
+    </div>
+	<div class="col-2">
+        <div class="card shadow hover-card">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" class="w-25 mb-3 mx-auto"><path fill="#00b6ff" d="M8,7.7c0-1.3,1.1-2.4,2.4-2.4h.3c1.5,0,2.7,1.2,2.7,2.6,0,1.5-1.2,2.7-2.6,2.7,0,0,0,0,0,0h-.3c-1.3,0-2.4-1.1-2.4-2.4v-.6Z"/> <path fill="#ff3737" d="M2.6,13.3c0-1.5,1.2-2.7,2.7-2.7h2.7v2.6c0,1.5-1.2,2.7-2.7,2.7s-2.7-1.2-2.7-2.7"/> <path fill="#24cb71" d="M8,0v5.3h2.7c1.5,0,2.7-1.2,2.7-2.6C13.4,1.2,12.2,0,10.8,0c0,0,0,0,0,0h-2.7Z"/> <path fill="#874fff" d="M2.6,2.7c0,1.5,1.2,2.7,2.7,2.7h2.7V0h-2.7C3.8,0,2.6,1.2,2.6,2.7"/> <path fill="#ff7237" d="M2.6,8c0,1.5,1.2,2.7,2.7,2.7h2.7v-5.3h-2.7c-1.5,0-2.7,1.2-2.7,2.7"/> </svg>
+            <div class="card-header text-center">
+                <h3>Figma</h3>
+            </div>
+            <a href="#" class="stretched-link"></a>
+        </div>
+    </div>
+</section>
+<!--/content-->

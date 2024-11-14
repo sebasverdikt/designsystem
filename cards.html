@@ -1,0 +1,189 @@
+<!-- Breadcrumbs -->
+<section class="row">
+    <nav aria-label="breadcrumb" class="col">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><i class="icon b2b-Config me-1 pe-1"></i><a href="#Components">Components</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Cards</li>
+        </ol>
+    </nav>
+</section>
+<!--/breadcrumbs-->
+
+<!-- Title -->
+<section class="row mb-3">
+    <h1 class="h1">Cards</h1>
+    <p class="header-subtitle pt-2 mb-0">Flexible and extensible content containers. They include options for headers and footers, a wide variety of content, contextual background colors, and display options.</p>
+</section>
+<!--/title-->
+
+<!-- Content -->
+<section id="Table" aria-label="Table card" class="row pb-3">
+    <div class="col-12">
+        <div class="card shadow">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <div class="card-title">
+                    <i class="icon b2b-List-cascade pe-2"></i>
+                    <span class="h3">Table card</span>
+                </div>
+                <div class="card-actions hstack">
+                    <button type="button" class="btn btn-icon btn-sa btn-primary"><i class="icon b2b-Filter"></i></button>
+                    <button type="button" class="btn btn-icon btn-sa btn-primary"><i class="icon b2b-Arrows-up-down"></i></button>
+                    <button type="button" class="btn btn-icon btn-sa btn-primary"><i class="icon b2b-Column-view"></i></button>
+                    <div class="vr mx-2"></div>
+                    <button type="button" class="btn btn-icon btn-sa btn-primary me-2"><i class="icon b2b-Document-export"></i></button>
+                    <button type="button" class="btn btn-primary btn-icon"><i class="icon b2b-Plus me-1"></i>New</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row gy-1">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-lg mb-0">
+                                <colgroup>
+                                    <col span="4">
+                                    <col span="1" class="w-100">
+                                    <col span="1">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">&nbsp;</th>
+                                        <th scope="col">Table Header 1</th>
+                                        <th scope="col">Table Header 2</th>
+                                        <th scope="col">Table Header 3</th>
+                                        <th scope="col">&nbsp;</th>
+                                        <th scope="col">&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <td><span class="text-warning">⬤</span></td>
+                                        <td>Table Data Cell</td>
+                                        <td>Table Data Cell</td>
+                                        <td>Table Data Cell</td>
+                                        <td class="table-spacer">&nbsp;</td>
+                                        <td class="table-tools">
+                                            <button type="button" class="btn btn-icon btn-form btn-primary"><i
+                                                    class="icon b2b-EllipsisV"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-success">⬤</span></td>
+                                        <td>Table Data Cell</td>
+                                        <td>Table Data Cell</td>
+                                        <td>Table Data Cell</td>
+                                        <td class="table-spacer">&nbsp;</td>
+                                        <td class="table-tools">
+                                            <button type="button" class="btn btn-icon btn-form btn-primary"><i
+                                                    class="icon b2b-EllipsisV"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-primary">⬤</span></td>
+                                        <td>Table Data Cell</td>
+                                        <td>Table Data Cell</td>
+                                        <td>Table Data Cell</td>
+                                        <td class="table-spacer">&nbsp;</td>
+                                        <td class="table-tools">
+                                            <button type="button" class="btn btn-icon btn-form btn-primary"><i
+                                                    class="icon b2b-EllipsisV"></i></button>
+                                        </td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row gy-1">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        <div aria-label="Pagination" class="text-end pag-nav" role="group">
+                            <button class="btn btn-icon btn-sa btn-primary" disabled><i
+                                    class="icon b2b-Chevron-left"></i></button>
+                            <input id="pag-1" name="pag-btn" type="radio" class="btn-check" autocomplete="off">
+                            <label for="pag-1" class="btn btn-no-txt btn-outline-primary">1</label>
+                            <input id="pag-2" name="pag-btn" type="radio" class="btn-check" autocomplete="off">
+                            <label for="pag-2" class="btn btn-no-txt btn-outline-primary">2</label>
+                            <input id="pag-3" name="pag-btn" type="radio" class="btn-check" autocomplete="off">
+                            <label for="pag-3" class="btn btn-no-txt btn-outline-primary">3</label>
+                            <button class="btn btn-icon btn-sa btn-primary"><i
+                                    class="icon b2b-Chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Data" aria-label="Data card" class="row pb-3">
+    <div class="col-6">
+        <div class="card shadow">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <div class="card-title">
+                    <i class="icon b2b-Details-info pe-2"></i>
+                    <span class="h3">Data card</span>
+                </div>
+                <div class="card-actions hstack">
+                    <button type="button" class="btn btn-icon btn-sa btn-primary ms-2"><i class="icon b2b-Edit"></i></button>
+                    <button type="button" data-bs-toggle="collapse" data-bs-target=".body-data" aria-expanded="true" aria-controls="body-data" class="btn btn-icon btn-sa btn-primary"><i class="icon b2b-Chevron-down"></i></button>
+                </div>
+            </div>
+            <div class="card-body body-data collapse show">
+                <form class="row g-3">
+                    <div class="col-5">
+                        <label for="Code" class="form-label">Code</label>
+                        <input type="text" class="form-control" id="Code" value="ABC-01" readonly>
+                    </div>
+                    <div class="col-5">
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="Name" value="Head office" readonly>
+                    </div>
+                    <div class="col">
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="Toggle">Active</label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="Toggle" checked disabled>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="Description" class="form-label">Description</label>
+                        <textarea class="form-control" id="Description" rows="3" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="row g-3 my-3" id="Resources" aria-label="Resources">
+	<h2>Resources</h2>
+	<div class="col-2">
+        <div class="card shadow hover-card">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" class="w-25 mb-3 mx-auto"><path fill="#ff4785" d="M13.9,0h-.9v2l-.8-.5-.8.5V.2L1.9.9c-.5,0-.9.5-.9,1v12.3c0,.5.4,1,.9,1l12,.9c.6,0,1.1-.4,1.1-1V1C15,.4,14.5,0,13.9,0ZM8.1,13.2c-2,0-3.7-.8-3.5-3.5,0-.3,2.6-.2,2.6,0,0,1.1.2,1.5.9,1.5s.7-.3.7-.7c0-.7-.8-1.1-1.6-1.6-1.2-.6-2.6-1.4-2.6-3.2s1.2-2.9,3.4-2.9,3.4,1.1,3.4,3.3c-.3.2-2.5.4-2.5,0,0-1.2-.5-1.3-.8-1.3s-.8,0-.8.7.7,1,1.6,1.5c1.2.6,2.7,1.4,2.7,3.3s-1.5,2.9-3.4,2.9Z"/></svg>
+            <div class="card-header text-center">
+                <h3>Storybook</h3>
+            </div>
+            <a href="#" class="stretched-link"></a>
+        </div>
+    </div>
+	<div class="col-2">
+        <div class="card shadow hover-card">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" class="w-25 mb-3 mx-auto"><path fill="#24292F" d="M8,0C3.6,0,0,3.7,0,8.2s2.3,6.7,5.5,7.8c.4,0,.5-.2.5-.4s0-.8,0-1.5c-2.2.5-2.7-1-2.7-1-.4-1-.9-1.2-.9-1.2-.7-.5,0-.5,0-.5.8,0,1.2.8,1.2.8.7,1.2,1.9.9,2.3.7,0-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4s.3-1.6.8-2.2c0-.2-.4-1,0-2.2,0,0,.7-.2,2.2.8.7-.2,1.3-.3,2-.3.7,0,1.4,0,2,.3,1.5-1.1,2.2-.8,2.2-.8.4,1.1.2,2,0,2.2.5.6.8,1.3.8,2.2,0,3.2-1.9,3.8-3.7,4,.3.3.5.7.5,1.5,0,1.1,0,2,0,2.3s.1.5.5.4c3.2-1.1,5.5-4.2,5.5-7.8,0-4.5-3.6-8.2-8-8.2Z"/></svg>
+            <div class="card-header text-center">
+                <h3>GitHub</h3>
+            </div>
+            <a href="#" class="stretched-link"></a>
+        </div>
+    </div>
+	<div class="col-2">
+        <div class="card shadow hover-card">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" class="w-25 mb-3 mx-auto"><path fill="#00b6ff" d="M8,7.7c0-1.3,1.1-2.4,2.4-2.4h.3c1.5,0,2.7,1.2,2.7,2.6,0,1.5-1.2,2.7-2.6,2.7,0,0,0,0,0,0h-.3c-1.3,0-2.4-1.1-2.4-2.4v-.6Z"/> <path fill="#ff3737" d="M2.6,13.3c0-1.5,1.2-2.7,2.7-2.7h2.7v2.6c0,1.5-1.2,2.7-2.7,2.7s-2.7-1.2-2.7-2.7"/> <path fill="#24cb71" d="M8,0v5.3h2.7c1.5,0,2.7-1.2,2.7-2.6C13.4,1.2,12.2,0,10.8,0c0,0,0,0,0,0h-2.7Z"/> <path fill="#874fff" d="M2.6,2.7c0,1.5,1.2,2.7,2.7,2.7h2.7V0h-2.7C3.8,0,2.6,1.2,2.6,2.7"/> <path fill="#ff7237" d="M2.6,8c0,1.5,1.2,2.7,2.7,2.7h2.7v-5.3h-2.7c-1.5,0-2.7,1.2-2.7,2.7"/> </svg>
+            <div class="card-header text-center">
+                <h3>Figma</h3>
+            </div>
+            <a href="#" class="stretched-link"></a>
+        </div>
+    </div>
+</section>
+<!--/content-->
