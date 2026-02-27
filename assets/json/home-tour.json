@@ -1,0 +1,31 @@
+{
+    "options": {
+      "progressBar": "#999",
+      "exitOnEscape": false,
+      "exitOnClickOutside": false,
+      "closeButton": true
+    },
+    "steps": [
+      {
+        "title": "Welcome aboard 👋",
+        "content": "<p class=\"mb-3\">You're officially registered. Let's take a quick tour.</p><p class=\"text-xs opacity-50\">Use the arrow keys or click next to continue.</p>",
+        "target": "#Nav"
+      },
+      {
+        "title": "Home screen overview 🏠",
+        "content": "<p class=\"mb-3\">See an overview of your application here.</p><p class=\"text-xs opacity-50\">Use the arrow keys or click next to continue.</p>",
+        "target": "#Main"
+      },
+      {
+        "title": "Latest listings 🔍",
+        "content": "<p class=\"mb-3\">View and explore the latest listings here.</p><p class=\"text-xs opacity-50\">Use the arrow keys or click next to continue.</p>",
+        "target": "#Index"
+      },
+      {
+        "title": "You're all set ✅",
+        "content": "<p class=\"mb-3\">Enjoy using our app!</p>",
+        "order": 99999999
+      }
+    ]
+  }
+  
