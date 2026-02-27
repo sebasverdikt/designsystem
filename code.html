@@ -1,0 +1,238 @@
+<!-- Breadcrumbs -->
+<section class="row">
+    <nav aria-label="breadcrumb" class="col">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><i class="icon b2b-Dashboard me-1 pe-1"></i><a href="#templates">Templates</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Code blocks</li>
+        </ol>
+    </nav>
+</section>
+<!--/breadcrumbs-->
+
+<!-- Title -->
+<section class="row mb-3">
+    <h1 class="h1">Code blocks</h1>
+</section>
+<!--/title-->
+
+<!-- Content -->
+<h2 id="Layout" class="mb-3">Layout</h2>
+
+<section id="Body" aria-label="Body" class="row gy-3 pb-3">
+    <div class="col-12">
+        <div class="card shadow py-2 px-3">
+            <div class="card-header d-flex justify-content-between align-items-center" style="transform: rotate(0);">
+				<div class="card-title">
+					<span class="h3">Body</span>
+				</div>
+				<div class="card-actions hstack">
+					<button type="button" data-bs-toggle="collapse" data-bs-target=".body-card" aria-expanded="false" aria-controls="body-button" class="btn btn-icon btn-sa btn-primary stretched-link collapsed">
+						<i class="icon b2b-Chevron-up"></i>
+					</button>
+				</div>
+			</div>
+            <div class="card-body body-card collapse">
+                <div class="row mt-1">
+                    <div class="col-12">
+                        <pre class="ps-3 border-start border-success border-2 bg-light bg-opacity-10"><code>
+&lt;body class="bg-image-050" class=""&gt;
+    &lt;div class="wrapper"&gt;
+        
+        <span class="text-success fs-3">SIDEBAR</span>
+
+        &lt;main id="Main" class="d-none"&gt;
+            &lt;div class="content container-fluid mb-5 p-3 gy-3"&gt;
+                <span class="text-primary fs-3">CONTENT</span>
+            &lt;/div&gt;
+
+            <span class="text-success fs-3">ASIDE</span>
+        &lt;/main&gt;         
+
+    &lt;/div&gt;
+
+    <span class="text-success fs-3">SCRIPTS</span>
+&lt;/body&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Sidebar" aria-label="Sidebar" class="row gy-3 pb-3">
+    <div class="col-12">
+        <div class="card shadow py-2 px-3">
+            <div class="card-header d-flex justify-content-between align-items-center" style="transform: rotate(0);">
+				<div class="card-title">
+					<span class="h3">Sidebar</span>
+				</div>
+				<div class="card-actions hstack">
+					<button type="button" data-bs-toggle="collapse" data-bs-target=".body-Sidebar" aria-expanded="false" aria-controls="body-button" class="btn btn-icon btn-sa btn-primary stretched-link collapsed">
+						<i class="icon b2b-Chevron-up"></i>
+					</button>
+				</div>
+			</div>
+            <div class="card-body body-Sidebar collapse">
+                <div class="row mt-1">
+                    <div class="col-12">
+                        <pre class="ps-3 border-start border-success border-2 bg-light bg-opacity-10"><code>
+&lt;nav id="Nav" class="sidebar border-end bg-body-secondary fixed-top d-flex justify-content-between d-none" aria-label="primary"&gt;
+    &lt;div class="bar-top w-100"&gt;
+        &lt;div class="d-flex align-items-center p-3" id="brand"&gt;
+            &lt;a href="#"&gt;&lt;img width="36" height="36" src="assets/brand.svg"&gt;&lt;/a&gt;
+            &lt;p class="ms-2 lead text-primary"&gt;PRODUCT&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="px-3 mb-3"&gt;
+            &lt;div class="input-group"&gt;   
+                &lt;input type="text" id="Search" class="form-control" placeholder="Search..." aria-describedby="Search"&gt;
+                &lt;button type="button" class="btn btn-icon btn-form btn-primary"&gt;&lt;i class="icon b2b-Search"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;ul class="navbar-nav"&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="id"&gt;
+                    &lt;i class="icon icon-wide b2b-Info me-1"&gt;&lt;/i&gt;List title
+                &lt;/a&gt;
+                &lt;div class="collapse" id="id"&gt;
+                    &lt;ul class="nav nav-sm flex-column"&gt;
+                        &lt;li class="nav-item"&gt;
+                            &lt;a href="#/" class="nav-link"&gt;
+                                List item
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="bar-bottom position-absolute p-3 w-100 bottom-0 start-0 border-top"&gt;
+        &lt;div class="toolbar d-flex justify-content-between"&gt;
+            &lt;a class="btn btn-primary btn-icon btn-sa" aria-label="Home" href="#/home"&gt;&lt;i class="icon b2b-Play"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a class="btn btn-primary btn-icon btn-sa" aria-label="Minimize" href="#"&gt;&lt;i class="icon b2b-Chevron-left"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Main_" aria-label="Main" class="row gy-3 pb-3">
+    <div class="col-12">
+        <div class="card shadow py-2 px-3">
+            <div class="card-header d-flex justify-content-between align-items-center" style="transform: rotate(0);">
+				<div class="card-title">
+					<span class="h3">Main</span>
+				</div>
+				<div class="card-actions hstack">
+					<button type="button" data-bs-toggle="collapse" data-bs-target=".body-Main" aria-expanded="false" aria-controls="body-button" class="btn btn-icon btn-sa btn-primary stretched-link collapsed">
+						<i class="icon b2b-Chevron-up"></i>
+					</button>
+				</div>
+			</div>
+            <div class="card-body body-Main collapse">
+                <p class="mb-0 text-success">Breadcrumbs</p>
+                <div class="row mt-0">
+                    <div class="col-12">
+                        <pre class="ps-3 border-start border-success border-2 bg-light bg-opacity-10"><code>
+&lt;section class="row"&gt;
+    &lt;nav aria-label="breadcrumb" class="col"&gt;
+        &lt;ol class="breadcrumb"&gt;
+            &lt;li class="breadcrumb-item"&gt;&lt;i class="icon b2b-Branch me-1 pe-1"&gt;&lt;/i&gt;&lt;a href="#parent"&gt;Parent&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="breadcrumb-item active" aria-current="page"&gt;Child&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/nav&gt;
+&lt;/section&gt;
+                        </code></pre>
+                    </div>
+                </div>
+                <p class="mb-0 text-success">Title</p>
+                <div class="row mt-0">
+                    <div class="col-12">
+                        <pre class="ps-3 border-start border-success border-2 bg-light bg-opacity-10"><code>
+&lt;section class="row mb-3"&gt;
+    &lt;h1 class="h1"&gt;Template&lt;/h1&gt;
+&lt;/section&gt;
+                        </code></pre>
+                    </div>
+                </div>
+                <p class="mb-0 text-success">Content</p>
+                <div class="row mt-0">
+                    <div class="col-12">
+                        <pre class="ps-3 border-start border-success border-2 bg-light bg-opacity-10"><code>
+&lt;section id="Template" aria-label="Template" class="row gy-3 pb-3"&gt;
+    &lt;h2 id="Cards"&gt;Cards&lt;/h2&gt;
+    &lt;div class="col-12"&gt;
+        &lt;div class="card shadow"&gt;
+            &lt;div class="card-header d-flex justify-content-between align-items-center"&gt;
+                &lt;div class="card-title"&gt;
+                    &lt;i class="icon b2b-Info pe-2"&gt;&lt;/i&gt;
+                    &lt;span class="h3"&gt;Card title&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="card-actions hstack"&gt;
+                    &lt;button type="button" data-bs-toggle="collapse" data-bs-target=".body-card" aria-expanded="true" aria-controls="body-button" class="btn btn-icon btn-sa btn-primary"&gt;
+                        &lt;i class="icon b2b-Chevron-up"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="card-body body-card collapse show"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-12"&gt;
+
+                        <span class="text-primary fs-3">CONTENT</span>
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Aside" aria-label="Aside" class="row gy-3 pb-3">
+    <div class="col-12">
+        <div class="card shadow py-2 px-3">
+            <div class="card-header d-flex justify-content-between align-items-center" style="transform: rotate(0);">
+				<div class="card-title">
+					<span class="h3">Aside</span>
+				</div>
+				<div class="card-actions hstack">
+					<button type="button" data-bs-toggle="collapse" data-bs-target=".aside-card" aria-expanded="false" aria-controls="body-button" class="btn btn-icon btn-sa btn-primary stretched-link collapsed">
+						<i class="icon b2b-Chevron-up"></i>
+					</button>
+				</div>
+			</div>
+            <div class="card-body aside-card collapse">
+                <div class="row mt-1">
+                    <div class="col-12">
+                        <pre class="ps-3 border-start border-success border-2 bg-light bg-opacity-10"><code>
+&lt;aside class="p-3 border-start bg-image-100 shadow-left" aria-label="aside"&gt;
+    &lt;small&gt;On this page:&lt;/small&gt;
+    &lt;hr class="my-1"&gt;
+    &lt;nav id="Index" class="nav"&gt;
+        &lt;div class="list-group"&gt;
+
+            <span class="text-primary fs-3">TOC</span>
+
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/aside&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/content-->
+

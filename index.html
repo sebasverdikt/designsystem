@@ -4,42 +4,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>B2BRAC Theme Kit | v2.2</title>
+        <title>B2BRAC Theme Kit | v2.0</title>
         <link rel="icon" href="assets/favicon.svg">
         <meta name="theme-color" content="#1F74B7">
         <link rel="stylesheet" href="assets/style.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/diff2html@3.4.48/bundles/css/diff2html.min.css" integrity="sha256-IMBK4VNZp0ivwefSn51bswdsrhk0HoMTLc2GqFHFBXg=" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/tour.css" />
     </head>
 
     <body class="bg-image-050" class="">
         <div class="wrapper">
-
-            <!-- Password -->
-            <div class="container" id="password-form">
-                <div class="row vh-75">
-                    <div class="col-auto m-auto">
-                        <div class="card shadow p-5">
-                            <div class="card-header text-center mb-3">
-                                <h3>Password</h3>
-                            </div>
-                            <div class="card-body">
-                                <form class="vstack gap-3" onsubmit="checkPassword(event)">
-                                    <div class="input-group">   
-                                        <input type="password" id="password" class="form-control" placeholder="Password">
-                                    </div>
-                                    <button class="btn btn-primary" type="submit">Enter</button>
-                                    <p id="info" class="text-info mb-0 text-center">Please enter password.</p>
-                                    <p id="error" class="text-danger mb-0 text-center" style="display:none">Incorrect password, try again.</p>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /password -->
             
             <!-- Sidebar -->
-            <nav id="Nav" class="sidebar border-end bg-body-secondary fixed-top d-flex justify-content-between d-none" aria-label="primary">
+            <nav id="Nav" class="sidebar border-end bg-body-secondary fixed-top d-flex justify-content-between" aria-label="primary">
                 <div class="bar-top w-100">
                     <div class="d-flex align-items-center p-3" id="brand">
                         <a href="#/home" data-page="home"><img width="36" height="36" src="assets/brand.svg"></a>
@@ -93,8 +70,8 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#/misc" class="nav-link text-body-tertiary pe-none">
-                                            Misc.
+                                        <a href="#/graphics" class="nav-link">
+                                            Graphics
                                         </a>
                                     </li>
                                 </ul>
@@ -141,13 +118,23 @@
                             <div class="collapse" id="Templates">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link text-body-tertiary pe-none">
-                                            Full width
+                                        <a href="#/code" class="nav-link">
+                                            Code blocks
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#/masonry" class="nav-link">
                                             Masonry
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#/onboarding" class="nav-link">
+                                            Onboarding
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#/tourtips" class="nav-link">
+                                            Tour Tips
                                         </a>
                                     </li>
                                 </ul>
@@ -164,6 +151,16 @@
                                             Diff report
                                         </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a href="#/figma" class="nav-link">
+                                            Figma
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#/downloads" class="nav-link">
+                                            Downloads
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -171,16 +168,20 @@
                 </div>
                 <div class="bar-bottom position-absolute p-3 w-100 bottom-0 start-0 border-top">
                     <div class="toolbar d-flex justify-content-between">
-                        <a class="btn btn-primary btn-icon btn-sa" aria-label="Home" href="#/home"><i class="icon b2b-Play"></i></a>
+                        <div>
+                            <a class="btn btn-primary btn-icon btn-sa" aria-label="Home" href="#/home"><i class="icon b2b-Play"></i></a>
+                            <a class="btn btn-primary btn-icon btn-sa" aria-label="Help" href="#"><i class="icon b2b-Help"></i></a>
+                        </div>
                         <a class="btn btn-primary btn-icon btn-sa" aria-label="Minimize" href="#"><i class="icon b2b-Chevron-left"></i></a>
                     </div>
                 </div>
             </nav>
             <!--/sidebar-->
 
-            <main id="Main" class="d-none">
+            <main id="Main" class="">
                 <!-- Main Content -->
                 <div class="content container-fluid mb-5 p-3 gy-3">
+
                 </div>
                 <!--/maincontent-->
 
@@ -201,10 +202,10 @@
         <!--/wrapper-->
 
         <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/diff2html@3.4.48/bundles/js/diff2html-ui.min.js" integrity="sha256-eU2TVHX633T1o/bTQp6iIJByYJEtZThhF9bKz/DcbbY=" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+        <script src="assets/tour.js"></script>
         <script src="assets/spa.js"></script>
     </body>
 
