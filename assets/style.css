@@ -4,9 +4,10 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,100..1000,-200..150,27..175,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 :root,
 [data-bs-theme=light] {
   --b2b-blue: #1F74B7;
@@ -709,6 +710,12 @@ progress {
 }
 .blockquote-footer::before {
   content: "— ";
+}
+
+.font-logo {
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: -0.15rem;
 }
 
 .img-fluid {
@@ -4047,7 +4054,7 @@ textarea.form-control {
   color: #000;
 }
 .nav-link[data-bs-toggle=collapse]::after {
-  content: "\e92e";
+  content: "\e932";
   display: block;
   font-family: "b2bicons";
   margin-left: auto;
@@ -4621,6 +4628,7 @@ textarea.form-control {
   top: 0;
   right: 0;
   width: var(--b2b-sidebar-width);
+  overflow: auto;
 }
 .wrapper main aside {
   display: none;
@@ -5830,7 +5838,7 @@ textarea.form-control {
 
 .modal-backdrop {
   --b2b-backdrop-zindex: 1050;
-  --b2b-backdrop-bg: #000;
+  --b2b-backdrop-bg: rgb(18.6, 69.6, 109.8);
   --b2b-backdrop-opacity: 0.5;
   position: fixed;
   top: 0;
@@ -7028,7 +7036,7 @@ textarea.form-control {
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: rgb(18.6, 69.6, 109.8);
 }
 .offcanvas-backdrop.fade {
   opacity: 0;
@@ -8360,7 +8368,8 @@ tbody tr:nth-of-type(13) td:last-child figure {
 .wrapper.minimized nav.sidebar .bar-bottom {
   padding: 0.875rem !important;
 }
-.wrapper.minimized nav.sidebar .bar-bottom .toolbar a:first-child {
+.wrapper.minimized nav.sidebar .bar-bottom .toolbar a[aria-label=Home],
+.wrapper.minimized nav.sidebar .bar-bottom .toolbar a[aria-label=Help] {
   display: none;
 }
 .wrapper.minimized nav.sidebar .bar-bottom .toolbar a:last-child {
